@@ -10,13 +10,13 @@
             </h6>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="products">產品列表</router-link>
+            <router-link class="nav-link" to="/admin/products">產品列表</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="order">訂單列表</router-link>
+            <router-link class="nav-link" to="/admin/order">訂單列表</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="coupon">優惠券</router-link>
+            <router-link class="nav-link" to="/admin/coupon">優惠券</router-link>
           </li>
         </ul>
         <ul class="nav flex-column mt-4">
