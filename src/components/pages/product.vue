@@ -116,7 +116,11 @@ export default {
       }/products`;
       const vm = this;
       vm.$http.get(api).then(response => {
-        vm.products = response.data.products;
+        response.data.products.forEach(item => {
+          if (item.is_enabled === 1) {
+            vm.products.push(item);
+          }
+        });
         let i = 0;
         for (i = 0; i < 4; i++) {
           let random = Math.floor(Math.random() * `${this.products.length}`);
